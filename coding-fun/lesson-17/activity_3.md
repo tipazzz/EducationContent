@@ -32,7 +32,7 @@ function plantSeed () {
 }
 
 /**
-* You need to check if the Agent is stepping on a lapis block turn right, if quartz turn left.
+* You need to check what block your Agent is on. If on a lapis block turn right, else if quartz turn left.
 */
 ```
 
