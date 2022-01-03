@@ -29,7 +29,7 @@ player.onChat("build_gates", function () {
 ```
 
 ## Step 3
-Drag the ``||Agent:agent place [forward]||`` code block to the coding Workspace and use the drop-down menu to set it to down.   
+Drag the ``||Agent:agent place [forward]||`` code block to the coding Workspace and use the drop-down menu to set it to **down**.   
 
 Add an ``||Agent:agent move [forward]||`` code block to your main code, use the drop-down menu to change it to **right**, and leave the number at **1**. 
 
