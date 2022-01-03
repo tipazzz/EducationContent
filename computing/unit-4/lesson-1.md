@@ -5,25 +5,24 @@
 ## Step 1
 Rename the **run** element of the ``||Player:on chat command||`` block to **build_gates**. 
 
-Drag the ``||Loops:repeat [4] times||`` code block into your ``||Player:on chat command||`` and set the number to **15**. This is going to be a large gate. 
-
-#### ~ tutorialhint
-``` blocks
-player.onChat("build_gates", function () {
-    for (let index = 0; index < 15; index++) {
-    	
-    }
-})
-```
-
-## Step 2
 Drag the ``||Agent:agent set active slot||`` code block to the coding Workspace and leave it set it to **1**.   
 
 #### ~ tutorialhint
 ``` blocks
 player.onChat("build_gates", function () {
+    agent.setSlot(1)
+})
+```
+
+## Step 2
+Drag the ``||Loops:repeat [4] times||`` code block into your ``||Player:on chat command||`` and set the number to **15**. This is going to be a large gate. 
+
+#### ~ tutorialhint
+``` blocks
+player.onChat("build_gates", function () {
+    agent.setSlot(1)
     for (let index = 0; index < 15; index++) {
-        agent.setSlot(1)
+    	
     }
 })
 ```
@@ -36,8 +35,8 @@ Add an ``||Agent:agent move [forward]||`` code block to your main code, use the 
 #### ~ tutorialhint
 ``` blocks
 player.onChat("build_gates", function () {
+    agent.setSlot(1)
     for (let index = 0; index < 15; index++) {
-        agent.setSlot(1)
         agent.place(DOWN)
         agent.move(RIGHT, 1)
     }
@@ -52,8 +51,8 @@ Drag another ``||Agent:agent move [forward]||`` code block to the coding Workspa
 #### ~ tutorialhint
 ``` blocks
 player.onChat("build_gates", function () {
+    agent.setSlot(1)
     for (let index = 0; index < 15; index++) {
-        agent.setSlot(1)
         agent.place(DOWN)
         agent.move(RIGHT, 1)
         agent.place(DOWN)
@@ -68,8 +67,8 @@ Drag another ``||Agent:agent place [forward]||`` code block from the ``||Agent:A
 #### ~ tutorialhint
 ``` blocks
 player.onChat("build_gates", function () {
+    agent.setSlot(1)
     for (let index = 0; index < 15; index++) {
-        agent.setSlot(1)
         agent.place(DOWN)
         agent.move(RIGHT, 1)
         agent.place(DOWN)
@@ -85,8 +84,8 @@ Place another ``||Agent:agent move [forward]||`` code block from the ``||Agent:A
 #### ~ tutorialhint
 ``` blocks
 player.onChat("build_gates", function () {
+    agent.setSlot(1)
     for (let index = 0; index < 15; index++) {
-        agent.setSlot(1)
         agent.place(DOWN)
         agent.move(RIGHT, 1)
         agent.place(DOWN)
@@ -104,8 +103,8 @@ Now we just need to get our ``||Agent:AGENT||`` to the next starting position to
 #### ~ tutorialhint
 ``` blocks
 player.onChat("build_gates", function () {
+    agent.setSlot(1)
     for (let index = 0; index < 15; index++) {
-        agent.setSlot(1)
         agent.place(DOWN)
         agent.move(RIGHT, 1)
         agent.place(DOWN)
@@ -123,8 +122,8 @@ Revisit the ``||Agent:Agent||`` drawer, drag two more ``||Agent:agent move [forw
 #### ~ tutorialhint
 ``` blocks
 player.onChat("build_gates", function () {
+    agent.setSlot(1)
     for (let index = 0; index < 15; index++) {
-        agent.setSlot(1)
         agent.place(DOWN)
         agent.move(RIGHT, 1)
         agent.place(DOWN)
@@ -157,8 +156,8 @@ player.onChat("zoo_sign", function () {
 	
 })
 player.onChat("build_gates", function () {
+    agent.setSlot(1)
     for (let index = 0; index < 15; index++) {
-        agent.setSlot(1)
         agent.place(DOWN)
         agent.move(RIGHT, 1)
         agent.place(DOWN)
@@ -188,8 +187,8 @@ player.onChat("zoo_sign", function () {
     )
 })
 player.onChat("build_gates", function () {
+    agent.setSlot(1)
     for (let index = 0; index < 15; index++) {
-        agent.setSlot(1)
         agent.place(DOWN)
         agent.move(RIGHT, 1)
         agent.place(DOWN)
@@ -219,8 +218,8 @@ player.onChat("zoo_sign", function () {
     )
 })
 player.onChat("build_gates", function () {
+    agent.setSlot(1)
     for (let index = 0; index < 15; index++) {
-        agent.setSlot(1)
         agent.place(DOWN)
         agent.move(RIGHT, 1)
         agent.place(DOWN)
@@ -250,8 +249,8 @@ player.onChat("zoo_sign", function () {
     )
 })
 player.onChat("build_gates", function () {
+    agent.setSlot(1)
     for (let index = 0; index < 15; index++) {
-        agent.setSlot(1)
         agent.place(DOWN)
         agent.move(RIGHT, 1)
         agent.place(DOWN)
@@ -279,8 +278,8 @@ player.onChat("zoo_sign", function () {
     )
 })
 player.onChat("build_gates", function () {
+    agent.setSlot(1)
     for (let index = 0; index < 15; index++) {
-        agent.setSlot(1)
         agent.place(DOWN)
         agent.move(RIGHT, 1)
         agent.place(DOWN)
