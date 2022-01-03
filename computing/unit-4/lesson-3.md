@@ -5,7 +5,7 @@
 ## Step 1
 Tell the BUILDER where to start. In MakeCode, rename the **run** element of the ``||Player:on chat command||`` block to **ocelot_wall**. 
 
-Visit the ``||Builder:BUILDER||`` drawer on the left of the screen. The ``||Builder:BUILDER||`` drawer allows players to access and manipulate the positions mechanic of Minecraft. Imagine the ``||Builder:BUILDER||`` as an invisible ``||Agent:Agent||``. 
+Visit the ``||Advanced:ADVANCED||`` drawer on the left of the screen then visit the ``||Builder:BUILDER||`` drawer on the left of the screen. The ``||Builder:BUILDER||`` drawer allows players to access and manipulate the positions mechanic of Minecraft. Imagine the ``||Builder:BUILDER||`` as an invisible ``||Agent:Agent||``. 
 
 Set the coordinates of the first to begin. Drag a ``||Builder:builder teleport to [~0] [~0] [~0]||`` block into your ``||Player:on chat command||`` block. 
 
