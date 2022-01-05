@@ -82,17 +82,3 @@ player.onChat("road_1", function () {
 
 ## Step 6
 Repeat the steps for the second road. 
-
-### ~ tutorialhint
-``` blocks
-player.onChat("road_2", function () {
-    blocks.fill(
-    GRAY_CONCRETE,
-    world(-22, 68, -565),
-    world(61, 68, -569),
-    FillOperation.Replace
-    )
-})
-```
-
-
