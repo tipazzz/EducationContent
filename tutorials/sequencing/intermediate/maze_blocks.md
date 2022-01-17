@@ -34,7 +34,7 @@ player.onChat("side1", function () {
 Get an ``||agent:agent place on move||`` block and set it to **true**.  Place it inside ``||player:on chat||`` **side1** command.
 
 ```blocks
-player.onChat(""side1"", function () {  
+player.onChat("side1", function () {  
     agent.setAssist(PLACE_ON_MOVE, true)  
      
 }) 
@@ -45,7 +45,7 @@ player.onChat(""side1"", function () {
 Get an ``||agent:agent move forward||`` and set it to **4**.  Place it inside ``||player:on chat||`` **side1** command under the previous commands.
 
 ```blocks
-player.onChat(""side1"", function () {  
+player.onChat("side1", function () {  
     agent.setAssist(PLACE_ON_MOVE, true)  
     agent.move(FORWARD, 4)  
 })  
@@ -56,7 +56,7 @@ player.onChat(""side1"", function () {
 Add an ``||agent:agent turn||`` command and set it to **turn left**. Drag it into the ``||player:on chat||`` **side1** command.
 
 ```blocks
-player.onChat(""side1"", function () {  
+player.onChat("side1", function () {  
     agent.setAssist(PLACE_ON_MOVE, true)  
     agent.move(FORWARD, 4)  
     agent.turn(LEFT_TURN)  
@@ -68,7 +68,7 @@ player.onChat(""side1"", function () {
 Add another ``||agent:move forward||`` block and set it to **5**.  Place it inside ``||player:on chat||`` **side1** command under the previous commands.
 
 ```blocks
-player.onChat(""side1"", function () {  
+player.onChat("side1", function () {  
     agent.setAssist(PLACE_ON_MOVE, true)  
     agent.move(FORWARD, 4)  
     agent.turn(LEFT_TURN)  
@@ -81,7 +81,7 @@ player.onChat(""side1"", function () {
 Add another ``||agent:agent turn||`` block and set it to **right**.  Place it inside ``||player:on chat||`` **side1** command under the previous commands.
 
 ```blocks
-player.onChat(""side1"", function () {  
+player.onChat("side1", function () {  
     agent.setAssist(PLACE_ON_MOVE, true)  
     agent.move(FORWARD, 4)  
     agent.turn(LEFT_TURN)  
@@ -97,7 +97,7 @@ Right-click on the existing ``||agent:agent move||`` **forward by 5** command an
 **NOTE:** The duplicate function can save time when coding with blocks.
 
 ```blocks
-player.onChat(""side1"", function () {  
+player.onChat("side1", function () {  
     agent.setAssist(PLACE_ON_MOVE, true)  
     agent.move(FORWARD, 4)  
     agent.turn(LEFT_TURN)  
@@ -112,7 +112,7 @@ player.onChat(""side1"", function () {
 Duplicate the existing ``||agent:place on move||`` block, then drag the duplicate into the ``||player:on chat||`` **side1** command under the previous agent commands.
 
 ```blocks
-player.onChat(""side1"", function () {  
+player.onChat("side1", function () {  
     agent.setAssist(PLACE_ON_MOVE, true)  
     agent.move(FORWARD, 4)  
     agent.turn(LEFT_TURN)  
@@ -136,7 +136,7 @@ Duplicate the existing ``||agent:agent move||`` **forward** command, then drag t
 Duplicate the existing ``||agent:agent turn||`` **left**, then drag the duplicate into the ``||player:on chat||`` **side1** command under the previous agent commands.
 
 ```blocks
-player.onChat(""side1"", function () {  
+player.onChat("side1", function () {  
     agent.setAssist(PLACE_ON_MOVE, true)  
     agent.move(FORWARD, 4)  
     agent.turn(LEFT_TURN)  
@@ -184,7 +184,7 @@ Return to Minecraft, type **tp**, then type **side2** into the chat line to see 
 player.onChat("tp", function () {  
     agent.teleportToPlayer()  
 })  
-player.onChat(""side1"", function () {  
+player.onChat("side1", function () {  
     agent.setAssist(PLACE_ON_MOVE, true)  
     agent.move(FORWARD, 4)  
     agent.turn(LEFT_TURN)  
