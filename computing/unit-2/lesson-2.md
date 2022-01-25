@@ -222,7 +222,7 @@ player.onChat("build_a_structure.", function () {
 
 
 ## Step 15
-Add another ``||Agent:set active slot||``, and set it to **3**. This will select your Agent's third Inventory slot and make **White Stained Glass Pane** your next building material.
+Add another ``||Agent:set active slot||``, and set it to **3**. This will select your Agent's third Inventory slot and make **White Stained-Glass Pane** your next building material.
 
 Add an ``||Agent:agent destroy [forward]||`` block. Add it below the last block and change its value to **right**. This will make your Agent remove the block immediately to the right making a hole in the wall, ready for a window.
 
