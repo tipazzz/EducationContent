@@ -251,6 +251,7 @@ player.onChat("build_a_structure.", function () {
         agent.move(BACK, 5)
         agent.move(LEFT, 1)
     }
+    agent.setAssist(PLACE_ON_MOVE, false)
     agent.move(DOWN, 3)
     agent.move(FORWARD, 1)
     agent.setSlot(3)
@@ -261,7 +262,7 @@ player.onChat("build_a_structure.", function () {
 
 
 ## Step 17
-Add another ``||Agent:agent destroy [forward]||`` code block. Leave it set to **forward** and change the numbering to **2**.
+Add another ``||Agent:agent move [forward]||`` code block. Leave it set to **forward** and change the numbering to **2**.
 
 ## Step 18
 Because we are placing a door, we will need to destroy two blocks high in the wall. Start by destroying this one by placing an ``||Agent:agent destroy [forward]||`` code block and setting it to **right**.
