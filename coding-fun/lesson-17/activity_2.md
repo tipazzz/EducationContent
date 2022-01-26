@@ -8,7 +8,7 @@
 # Build a Town Hall!
 
 ## Step 1
-We created a function **plantSeed** for you. It is simply the code that you used for the previous activity. Now drag ``||player: on chat||`` command into the workspace. Add a ``||loops: repeat||`` loop and ``||function:call plantSeed||`` function. Count how many times the Agent needs to repeat **plantSeed** function. 
+We created a function **plantSeed** for you. It is simply the code that you used for the previous activity. Now drag an ``||player: on chat||`` command into the workspace and name it **run**. Add a ``||loops: repeat||`` loop and click on the **Advanced** section then click **Functions** and drag a``||function:call plantSeed||`` function into your loop. Count how many times the Agent needs to repeat **plantSeed** function. 
 
 ### ~ tutorialHint
 Functions live in the **Advanced** section. It is also a good practice to leave notes about the code that's written, like the one that we left for you about functions. 

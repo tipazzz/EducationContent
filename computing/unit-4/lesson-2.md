@@ -84,9 +84,9 @@ player.onChat("zoo_path_1", function () {
 ```
 
 ## Step 6
-Change the center, or **Z** coordinate, to one number lower. In this example, this will be **68**.  
+Change the center, or **Y** coordinate, to one number lower. In this example, this will be **68**.  
 
-Remember, the center number of coordinates represents the height, from the bottom of the world **0** to the top **256**. We must change this to one block lower because we want to change the **Grass** beneath our feet to **Grey Concrete** and the block selected as part of the original coordinates is the that of our player's legs. So if we ran the code now, the road would be one block above ground level. This way, we replace the grass instead. 
+Remember, the center number of coordinates represents the height, from the bottom of the world **0** to the top **256**. We must change this to one block lower because we want to change the **Grass** beneath our feet to **Grey Gravel** and the block selected as part of the original coordinates is the that of our player's legs. So if we ran the code now, the road would be one block above ground level. This way, we replace the grass instead. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -103,5 +103,5 @@ player.onChat("zoo_path_1", function () {
 Now test your code. If you have coded correctly, you should see a road appear in place of the grass.   
 
 ## Step 8
-Repeat the steps for the second, third, and fourth paths using your **Yellow Wool, Orange Wool** and **Red Wool** markers. You can plan any path network you wish if the example below doesn't suit your plans for your zoo. 
+Repeat the steps for the second, third, and fourth paths using your **Green Wool, Orange Wool** and **Red Wool** markers. You can plan any path network you wish if the example below doesn't suit your plans for your zoo. 
 

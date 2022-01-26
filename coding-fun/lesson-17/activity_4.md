@@ -8,7 +8,7 @@
 # Beets!
 
 ## Step 1
-You are provided with three functions: ``||functions: plantSeed||``, ``||functions: plantSection||`` and ``||functions: checkTurn||``. First, create 2 new ``||variable: variables||`` and name them **leftBlock** and **rightBlock**. Set ``||variable: leftBlock||`` to **lapis lazuli** and ``||variable: rightBlock||`` to **quartz**. Swap **lapis lazuli** and **quartz** in the ``||functions: turn||`` function to the newly created variables. In the new ``||player: on chat||`` command add your condition: ``||loops:while||`` the Agent is ``||agent:inspecting the block down||``, and it is not a **gold block**, ``||functions: call||`` the necessary functions. 
+You are provided with three functions: ``||functions: plantSeed||``, ``||functions: plantSection||`` and ``||functions: checkTurn||``. First, create  a new ``||player: on chat||`` command and add your condition: ``||loops:while||`` the Agent is ``||agent:inspecting the block down||``, and it is not a **gold block**, ``||functions: call||`` the necessary functions. 
 
 
 
@@ -32,7 +32,7 @@ function plantSeed () {
         agent.place(DOWN)
     }
 }
-function turn (leftBlock: number, rightBlock: number) {
+function checkTurn () {
     if (agent.inspect(AgentInspection.Block, DOWN) == LAPIS_LAZULI_BLOCK) {
         agent.turn(RIGHT_TURN)
         agent.move(FORWARD, 1)
@@ -51,22 +51,20 @@ function turn (leftBlock: number, rightBlock: number) {
 player.onChat("plant", function () {
     while (agent.inspect(AgentInspection.Block, DOWN) != GOLD_BLOCK) {
         plantSection()
-        checkTurn(LAPIS_LAZULI_BLOCK, BLOCK_OF_QUARTZ)
+        checkTurn()
     }
 })
 
-function turn (leftBlock: number, rightBlock: number) {
-    if (agent.inspect(AgentInspection.Block, DOWN) == block) {
+function checkTurn () {
+    if (agent.inspect(AgentInspection.Block, DOWN) == LAPIS_LAZULI_BLOCK) {
         agent.turn(RIGHT_TURN)
         agent.move(FORWARD, 1)
         agent.turn(RIGHT_TURN)
-    } else if (agent.inspect(AgentInspection.Block, DOWN) == block2) {
+    } else if (agent.inspect(AgentInspection.Block, DOWN) == BLOCK_OF_QUARTZ) {
         agent.turn(LEFT_TURN)
         agent.move(FORWARD, 1)
         agent.turn(LEFT_TURN)
     }
 }
 
-let leftBlock = BLOCK_OF_QUARTZ
-let rightBlock = LAPIS_LAZULI_BLOCK
 ```

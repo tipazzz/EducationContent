@@ -5,7 +5,7 @@
 ## Step 1
 Tell the BUILDER where to start. In MakeCode, rename the **run** element of the ``||Player:on chat command||`` block to **ocelot_wall**. 
 
-Visit the ``||Builder:BUILDER||`` drawer on the left of the screen. The ``||Builder:BUILDER||`` drawer allows players to access and manipulate the positions mechanic of Minecraft. Imagine the ``||Builder:BUILDER||`` as an invisible ``||Agent:Agent||``. 
+Visit the ``||Advanced:ADVANCED||`` drawer on the left of the screen then visit the ``||Builder:BUILDER||`` drawer on the left of the screen. The ``||Builder:BUILDER||`` drawer allows players to access and manipulate the positions mechanic of Minecraft. Imagine the ``||Builder:BUILDER||`` as an invisible ``||Agent:Agent||``. 
 
 Set the coordinates of the first to begin. Drag a ``||Builder:builder teleport to [~0] [~0] [~0]||`` block into your ``||Player:on chat command||`` block. 
 
@@ -124,7 +124,7 @@ player.onChat("ocelot_wall", function () {
 ```
 
 ## Step 10
-Run the code to build the walls.Test your code. ``||Builder:BUILDER||`` should now start at position **-38, 69, -576** and move West by **21** blocks, turn left and move **9** blocks while placing **Stone Bricks** on the way. The result is a small perimeter wall around your ocelot enclosure. You'll see this happens very fast in comparison to ``||Agent:Agent||`` and ``||Blocks:BLOCKS||`` in previous lessons. With a little preplanning, you can create huge structures in seconds. 
+Run the code to build the walls.Test your code. ``||Builder:BUILDER||`` should now start at position **-38, 69, -576** and move West by **21** blocks, turn **left** and move **9** blocks while placing **Stone Bricks** on the way. The result is a small perimeter wall around your ocelot enclosure. You'll see this happens very fast in comparison to ``||Agent:Agent||`` and ``||Blocks:BLOCKS||`` in previous lessons. With a little preplanning, you can create huge structures in seconds. 
 
 ## Step 11
 Add fencing and other details. This wall won't keep ocelots in, let's add fencing above to make sure they don't escape. 

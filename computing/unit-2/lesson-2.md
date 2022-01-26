@@ -87,7 +87,7 @@ player.onChat("build_a_structure.", function () {
 ```
 
 ## Step 8
-Add another ``||Agent:agent move [forward]||``, and leave this one set to **false**. Because we don't want our Agent to build this time as it moves. 
+Add another ``||Agent:agent [place on move]||``, and leave this one set to **false**. Because we don't want our Agent to build this time as it moves. 
 
 ### ~ tutorialhint
 ``` blocks
@@ -159,7 +159,7 @@ player.onChat("build_a_structure.", function () {
 ```
 
 ## Step 13
-Now it is time to build a roof. Add another ``||Agent:agent [place on move]||`` and leave it set to **false**. Then add another ``||Agent:agent move [forward]||``, and set it to **down** and **3**. Your Agent will move down three spaces to the level that a window might be placed so it won't place any roof tiles. 
+Now it is time to build a window and a door. Add another ``||Agent:agent [place on move]||`` and leave it set to **false**. Then add another ``||Agent:agent move [forward]||``, and set it to **down** and **3**. Your Agent will move down three spaces to the level that a window might be placed so it won't place any roof tiles. 
 
 ### ~ tutorialhint
 ``` blocks
@@ -251,6 +251,7 @@ player.onChat("build_a_structure.", function () {
         agent.move(BACK, 5)
         agent.move(LEFT, 1)
     }
+    agent.setAssist(PLACE_ON_MOVE, false)
     agent.move(DOWN, 3)
     agent.move(FORWARD, 1)
     agent.setSlot(3)
@@ -261,7 +262,7 @@ player.onChat("build_a_structure.", function () {
 
 
 ## Step 17
-Add another ``||Agent:agent destroy [forward]||`` code block. Leave it set to **forward** and change the numbering to **2**.
+Add another ``||Agent:agent move [forward]||`` code block. Leave it set to **forward** and change the numbering to **2**.
 
 ## Step 18
 Because we are placing a door, we will need to destroy two blocks high in the wall. Start by destroying this one by placing an ``||Agent:agent destroy [forward]||`` code block and setting it to **right**. 
