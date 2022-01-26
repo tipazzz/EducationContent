@@ -7,6 +7,7 @@ pass
 agent.collect_all()
 agent.move(FORWARD, 5)
 agent.drop_all(FORWARD)
+agent.turn(LEFT)
 
 ```
 
