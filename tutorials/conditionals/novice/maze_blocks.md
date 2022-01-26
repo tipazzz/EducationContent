@@ -8,6 +8,14 @@ Get a ``||loops: forever||`` loop and drag it into the workspace.
 loops.forever(function () {
 	
 })
+
+// Included below to force the block to appear for the student
+agent.teleportToPlayer()
+ player.onChat("pyramid", function (size)){ 
+    let size = 0 
+      
+    } 
+
 ```
 
 ## Step 2
@@ -48,7 +56,3 @@ loops.forever(function () {
 ## Step 5
 Press the **Play** button and try out your code in Minecraft. 
 
-```ghost
- agent.teleportToPlayer()
- ```
- 
