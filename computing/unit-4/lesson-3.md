@@ -5,7 +5,7 @@
 ## Step 1
 Tell the BUILDER where to start. In MakeCode, rename the **run** element of the ``||Player:on chat command||`` block to **ocelot_wall**. 
 
-Visit the ``||Builder:BUILDER||`` drawer on the left of the screen. The ``||Builder:BUILDER||`` drawer allows players to access and manipulate the positions mechanic of Minecraft. Imagine the ``||Builder:BUILDER||`` as an invisible ``||Agent:Agent||``. 
+Visit the ``||Advanced:ADVANCED||`` drawer on the left of the screen then visit the ``||Builder:BUILDER||`` drawer on the left of the screen. The ``||Builder:BUILDER||`` drawer allows players to access and manipulate the positions mechanic of Minecraft. Imagine the ``||Builder:BUILDER||`` as an invisible ``||Agent:Agent||``. 
 
 Set the coordinates of the first to begin. Drag a ``||Builder:builder teleport to [~0] [~0] [~0]||`` block into your ``||Player:on chat command||`` block. 
 
@@ -31,9 +31,9 @@ player.onChat("ocelot_wall", function () {
 ## Step 3
 Tell the BUILDER the direction. Now, we need to tell it what direction to build in. Remember, Minecraft worlds have a North to South and East to West, as well as up and down grid. The easiest way to do this is to use a Compass. 
 
-Open your inventory search for **compass**. 
+You will find a compass in your inventory.
 
-Drag the **compass** to your main inventory and select it. As you move around, the **compass** does too. You can use this to find your North (the red dial is pointing North), East, South and West. The direction on the **compass** in the image below is West. This is the direction we want the ``||Builder:BUILDER||`` to work. 
+As you move around, the **compass** does too. You can use this to find your North (the red dial is pointing North), East, South and West. The direction on the **compass** in the image below is West. This is the direction we want the ``||Builder:BUILDER||`` to work. 
 
 ## Step 4
 Return to the ``||Builder:BUILDER||`` drawer and look for the ``||Builder:builder face [West (negative X)||`` code block. Add this to your main code and use the drop-down menu to set the correct direction for your build. 
@@ -124,7 +124,7 @@ player.onChat("ocelot_wall", function () {
 ```
 
 ## Step 10
-Run the code to build the walls.Test your code. ``||Builder:BUILDER||`` should now start at position **-38, 69, -576** and move West by **21** blocks, turn left and move **9** blocks while placing **Stone Bricks** on the way. The result is a small perimeter wall around your ocelot enclosure. You'll see this happens very fast in comparison to ``||Agent:Agent||`` and ``||Blocks:BLOCKS||`` in previous lessons. With a little preplanning, you can create huge structures in seconds. 
+Run the code to build the walls.Test your code. ``||Builder:BUILDER||`` should now start at position **-38, 69, -576** and move West by **21** blocks, turn **left** and move **9** blocks while placing **Stone Bricks** on the way. The result is a small perimeter wall around your ocelot enclosure. You'll see this happens very fast in comparison to ``||Agent:Agent||`` and ``||Blocks:BLOCKS||`` in previous lessons. With a little preplanning, you can create huge structures in seconds. 
 
 ## Step 11
 Add fencing and other details. This wall won't keep ocelots in, let's add fencing above to make sure they don't escape. 

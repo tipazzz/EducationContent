@@ -31,7 +31,7 @@ player.onChat(" plant_flowers", function () {
 ## Step 3
 Visit a new toolbox drawer in the left menu, called the ``||Math:MATH||`` drawer. 
 
-The blocks in this drawer allow you to use mathematics to create a ***variable*** in your code. You can think of a variable as box that holds information or data that can change as you code.  
+The blocks in this drawer allow you to use mathematics within your code.
 
 Drag and drop the ``||Math:pick random [0] to [10]||`` code block to your ``||Player:on chat command||`` and place it as replacement for the number element of your ``||Agent:agent set active slot||``. 
 
