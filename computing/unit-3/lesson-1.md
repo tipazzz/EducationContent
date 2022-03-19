@@ -1,5 +1,3 @@
-### @explicitHints 1
-
 # Lesson 1: Code a Park Fence
 
 ## Step 1
@@ -7,7 +5,7 @@ Rename the **run** element of the ``||Player:on chat command||`` block to **park
 
 Drag and drop the ``||Agent:agent set active slot||`` code block to the coding Workspace and add it to your  ``||Player:on chat command||`` code block.
 
-Drag and drop the ``||Agent:agent move [forward]||`` code block to the coding Workspace and add it to your ``||Player:on chat command||`` code block, setting it to up.
+Drag and drop the ``||Agent:agent move [forward]||`` code block to the coding Workspace and add it to your ``||Player:on chat command||`` code block. Change **forward** to **up**.
 
 #### ~ tutorialhint
 ``` blocks
@@ -31,9 +29,9 @@ player.onChat("park_fence", function () {
 ```
 
 ## Step 3
-Drag the ``||Agent:agent move [forward]||`` code block to the coding Workspace, add it to your ``||Player:on chat command||`` code block, inside the ``||Loops:repeat [4] times||`` loop, then set it to our first number, **25**(from **Step 5**). 
+Drag the ``||Agent:agent move [forward]||`` code block to the coding Workspace, add it to your ``||Player:on chat command||`` code block, inside the ``||Loops:repeat [2] times||`` loop, then set it to our first number, **25**. 
 
-Drag the ``||Agent:agent place [forward]||`` code block to the coding Workspace, add it to your ``||Player:on chat command||`` code block, inside the ``||Loops:repeats [2] times||`` loop, under the ``||Agent.agent move[forward]||`` code block, then set it to **down**.
+Drag the ``||Agent:agent place [forward]||`` code block to the coding Workspace, add it to your ``||Player:on chat command||`` code block, inside the ``||Loops:repeats [2] times||`` loop, under the ``||Agent.agent move[forward]||`` code block, then change **forward** to **down**.
 
 #### ~ tutorialhint
 ``` blocks
@@ -64,9 +62,9 @@ player.onChat("park_fence", function () {
 ```
 
 ## Step 5
-Drag the ``||Agent:agent move [forward]||`` code block to your ``||Player:on chat command||`` code block, then set it to our second number, **23** (from **Step 6**). 
+Drag the ``||Agent:agent move [forward]||`` code block to your ``||Player:on chat command||`` code block, then set it to our second number, **23**. 
 
-Drag the ``||Agent:agent place[forward]||`` code block in your ``||Player:on chat command||`` code block, then set it to **down**.
+Drag the ``||Agent:agent place[forward]||`` code block in your ``||Player:on chat command||`` code block, change **forward** to **down**.
 
 #### ~ tutorialhint
 ``` blocks
