@@ -59,8 +59,8 @@ The last coordinates are relative to your player, so your player will become the
 ``` blocks
 player.onChat("clone_here.", function () {
     blocks.clone(
-    world(42, 70, -452),
-    world(34, 77, -446),
+    world(67, 69, -544),
+    world(73, 77, -551),
     pos(0, 0, 0),
     CloneMask.Replace,
     CloneMode.Normal
