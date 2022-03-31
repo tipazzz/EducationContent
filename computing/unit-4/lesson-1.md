@@ -5,12 +5,13 @@
 ## Step 1
 Rename the **run** element of the ``||Player:on chat command||`` block to **build_gates**.
 
-Drag the ``||Agent:agent set active slot||`` code block to the coding Workspace and leave it set it to **1**.   
+Drag the ``||Agent:agent set active slot||`` code block to the coding Workspace and leave it set it to **1**. Then add a ``||Agent:agent move [forward]||`` block and use the drop-down menu to change it to **up**, and leave the number at **1**.
 
 #### ~ tutorialhint
 ``` blocks
 player.onChat("build_gates", function () {
     agent.setSlot(1)
+    agent.move(UP, 1)
 })
 ```
 
@@ -21,6 +22,7 @@ Drag the ``||Loops:repeat [4] times||`` code block into your ``||Player:on chat 
 ``` blocks
 player.onChat("build_gates", function () {
     agent.setSlot(1)
+    agent.move(UP, 1)
     for (let index = 0; index < 15; index++) {
 
     }
@@ -36,6 +38,7 @@ Add an ``||Agent:agent move [forward]||`` code block to your main code, use the 
 ``` blocks
 player.onChat("build_gates", function () {
     agent.setSlot(1)
+    agent.move(UP, 1)
     for (let index = 0; index < 15; index++) {
         agent.place(DOWN)
         agent.move(RIGHT, 1)
@@ -52,6 +55,7 @@ Drag another ``||Agent:agent move [forward]||`` code block to the coding Workspa
 ``` blocks
 player.onChat("build_gates", function () {
     agent.setSlot(1)
+    agent.move(UP, 1)
     for (let index = 0; index < 15; index++) {
         agent.place(DOWN)
         agent.move(RIGHT, 1)
@@ -71,6 +75,7 @@ Then also add a ``||Agent:agent move [forward]||`` code block from the ``||Agent
 ``` blocks
 player.onChat("build_gates", function () {
     agent.setSlot(1)
+    agent.move(UP, 1)
     for (let index = 0; index < 15; index++) {
         agent.place(DOWN)
         agent.move(RIGHT, 1)
@@ -90,6 +95,7 @@ Now we just need to get our ``||Agent:AGENT||`` to the next starting position to
 ``` blocks
 player.onChat("build_gates", function () {
     agent.setSlot(1)
+    agent.move(UP, 1)
     for (let index = 0; index < 15; index++) {
         agent.place(DOWN)
         agent.move(RIGHT, 1)
@@ -143,6 +149,7 @@ player.onChat("zoo_sign", function () {
 })
 player.onChat("build_gates", function () {
     agent.setSlot(1)
+    agent.move(UP, 1)
     for (let index = 0; index < 15; index++) {
         agent.place(DOWN)
         agent.move(RIGHT, 1)
@@ -174,6 +181,7 @@ player.onChat("zoo_sign", function () {
 })
 player.onChat("build_gates", function () {
     agent.setSlot(1)
+    agent.move(UP, 1)
     for (let index = 0; index < 15; index++) {
         agent.place(DOWN)
         agent.move(RIGHT, 1)
@@ -205,6 +213,7 @@ player.onChat("zoo_sign", function () {
 })
 player.onChat("build_gates", function () {
     agent.setSlot(1)
+    agent.move(UP, 1)
     for (let index = 0; index < 15; index++) {
         agent.place(DOWN)
         agent.move(RIGHT, 1)
@@ -236,6 +245,7 @@ player.onChat("zoo_sign", function () {
 })
 player.onChat("build_gates", function () {
     agent.setSlot(1)
+    agent.move(UP, 1)
     for (let index = 0; index < 15; index++) {
         agent.place(DOWN)
         agent.move(RIGHT, 1)
@@ -265,6 +275,7 @@ player.onChat("zoo_sign", function () {
 })
 player.onChat("build_gates", function () {
     agent.setSlot(1)
+    agent.move(UP, 1)
     for (let index = 0; index < 15; index++) {
         agent.place(DOWN)
         agent.move(RIGHT, 1)
