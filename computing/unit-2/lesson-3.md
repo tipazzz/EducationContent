@@ -3,7 +3,9 @@
 # Lesson 3: Code a Row of Houses
 
 ## Step 1
-Manually build the house to your design specification. Do this in a space you will not otherwise be using.
+Manually build the house to your design specification. Do this in the designated construction zone, marked by yellow and black wool.
+![](build_area.png)
+![](example_house.png)
 
 ## Step 2
 Rename the **run** element of the ``||Player:on chat command||`` block to **clone_here**. Drag a ``||Blocks:clone from||`` code block to your ``||Player:on chat command||``. 
@@ -59,8 +61,8 @@ The last coordinates are relative to your player, so your player will become the
 ``` blocks
 player.onChat("clone_here.", function () {
     blocks.clone(
-    world(42, 70, -452),
-    world(34, 77, -446),
+    world(67, 69, -544),
+    world(73, 77, -551),
     pos(0, 0, 0),
     CloneMask.Replace,
     CloneMode.Normal
