@@ -115,6 +115,7 @@ Revisit the ``||Agent:Agent||`` drawer, drag two more ``||Agent:agent move [forw
 ``` blocks
 player.onChat("build_gates", function () {
     agent.setSlot(1)
+    agent.move(UP, 1)
     for (let index = 0; index < 15; index++) {
         agent.place(DOWN)
         agent.move(RIGHT, 1)
