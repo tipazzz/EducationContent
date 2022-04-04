@@ -229,17 +229,16 @@ player.onChat("build_gates", function () {
 ```
 
 ## Step 14
-Change the coordinates in the ``||Positions:world||`` position to the numbers of where you would like your text to begin. In our example, this is **-35, 82, -559**. Take a moment to remember the importance of the minus when using these numbers.
+Change the coordinates in the ``||Positions:world||`` position to the numbers of where you would like your text to begin. In our example, this is **-31, 83, -560**. Take a moment to remember the importance of the minus when using these numbers.
 
-This may take a little trial and error to get correct in your world, depending on how many letters you choose to create, where they are placed and what direction they are in. Our example will be shown in an image after the next step.
-
+This may take a little trial and error to get correct in your world, depending on how many letters you choose to create, where they are placed and what direction they are in.
 #### ~ tutorialhint
 ``` blocks
 player.onChat("zoo_sign", function () {
     blocks.print(
     "ZOO",
     LOG_OAK,
-    world(-35, 82, -559),
+    world(-31, 83, -560),
     WEST
     )
 })
@@ -269,7 +268,7 @@ player.onChat("zoo_sign", function () {
     blocks.print(
     "ZOO",
     LOG_OAK,
-    world(-35, 82, -559),
+    world(-31, 83, -560),
     NORTH
     )
 })
