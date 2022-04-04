@@ -88,8 +88,8 @@ player.onChat("build_gates", function () {
 ```
 
 ## Step 6
-Drag another ``||Agent:agent place [forward]||`` code block from the ``||Agent:AGENT||`` drawer and set it to **down**.  
-Now we just need to get our ``||Agent:AGENT||`` to the next starting position to complete this part of the gate's code.
+Drag another ``||Agent:agent place [forward]||`` code block from the ``||Agent:Agent||`` drawer and set it to **down**.  
+Now we just need to get our ``||Agent:Agent||`` to the next starting position to complete this part of the gate's code.
 
 #### ~ tutorialhint
 ``` blocks
@@ -129,13 +129,13 @@ player.onChat("build_gates", function () {
 })
 ```
 ## Step 8
-Position your Agent on the first set of **Yellow wool** blocks before removing them and running your code.
+Position your Agent on either **Yellow wool** blocks using your whistle.
 
 ## Step 9
 Run your code. Type your ``||Player:on chat command||`` into the chat function **T** and watch your Agent build the first pillar of the gate.
 
 ## Step 10
-Repeat this for the second pillar. Placing your Agent in the same position as the second set of  **Yellow Wool** blocks before removing them and running your code. You should now have two wooden pillars.  
+Repeat this for the second pillar. Position your Agent on the other **Yellow wool** block with your whistle, then run your code again. You should now have two wooden pillars.  
 
 ## Step 11
 Code the sign entrance. Now we need to add the sign at the top.   
