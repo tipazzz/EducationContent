@@ -88,8 +88,8 @@ player.onChat("build_gates", function () {
 ```
 
 ## Step 6
-Drag another ``||Agent:agent place [forward]||`` code block from the ``||Agent:AGENT||`` drawer and set it to **down**.  
-Now we just need to get our ``||Agent:AGENT||`` to the next starting position to complete this part of the gate's code.
+Drag another ``||Agent:agent place [forward]||`` code block from the ``||Agent:Agent||`` drawer and set it to **down**.  
+Now we just need to get our ``||Agent:Agent||`` to the next starting position to complete this part of the gate's code.
 
 #### ~ tutorialhint
 ``` blocks
@@ -115,6 +115,7 @@ Revisit the ``||Agent:Agent||`` drawer, drag two more ``||Agent:agent move [forw
 ``` blocks
 player.onChat("build_gates", function () {
     agent.setSlot(1)
+    agent.move(UP, 1)
     for (let index = 0; index < 15; index++) {
         agent.place(DOWN)
         agent.move(RIGHT, 1)
@@ -129,13 +130,13 @@ player.onChat("build_gates", function () {
 })
 ```
 ## Step 8
-Position your Agent on the first set of **Yellow wool** blocks before removing them and running your code.
+Position your Agent on either **Yellow wool** blocks using your whistle.
 
 ## Step 9
 Run your code. Type your ``||Player:on chat command||`` into the chat function **T** and watch your Agent build the first pillar of the gate.
 
 ## Step 10
-Repeat this for the second pillar. Placing your Agent in the same position as the second set of  **Yellow Wool** blocks before removing them and running your code. You should now have two wooden pillars.  
+Repeat this for the second pillar. Position your Agent on the other **Yellow wool** block with your whistle, then run your code again. You should now have two wooden pillars.  
 
 ## Step 11
 Code the sign entrance. Now we need to add the sign at the top.   
@@ -229,17 +230,16 @@ player.onChat("build_gates", function () {
 ```
 
 ## Step 14
-Change the coordinates in the ``||Positions:world||`` position to the numbers of where you would like your text to begin. In our example, this is **-35, 82, -559**. Take a moment to remember the importance of the minus when using these numbers.
+Change the coordinates in the ``||Positions:world||`` position to the numbers of where you would like your text to begin. In our example, this is **-31, 83, -560**. Take a moment to remember the importance of the minus when using these numbers.
 
-This may take a little trial and error to get correct in your world, depending on how many letters you choose to create, where they are placed and what direction they are in. Our example will be shown in an image after the next step.
-
+This may take a little trial and error to get correct in your world, depending on how many letters you choose to create, where they are placed and what direction they are in.
 #### ~ tutorialhint
 ``` blocks
 player.onChat("zoo_sign", function () {
     blocks.print(
     "ZOO",
     LOG_OAK,
-    world(-35, 82, -559),
+    world(-31, 83, -560),
     WEST
     )
 })
@@ -269,7 +269,7 @@ player.onChat("zoo_sign", function () {
     blocks.print(
     "ZOO",
     LOG_OAK,
-    world(-35, 82, -559),
+    world(-31, 83, -560),
     NORTH
     )
 })
