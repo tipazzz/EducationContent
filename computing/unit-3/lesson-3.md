@@ -47,7 +47,16 @@ player.onChat(" plant_flowers", function () {
 ```
 
 ## Step 4
-Set the first number to **1** and the second to **5**, corresponding with the five slots in which you placed the flowers in **Step 2**. 
+Set the first number to **1** and the second to **5**, corresponding with the five slots in the agent's inventory. 
+#### ~ tutorialhint
+``` blocks
+player.onChat(" plant_flowers", function () {
+    for (let index = 0; index < 20; index++) {
+        agent.setSlot(Math.randomRange(1, 5))
+    }
+})
+```
+
 
 ## Step 5
 Code your Agent randomly move around. Now visit the ``||Agent:Agent||``drawer and drag the ``||Agent:agent move [forward]||`` code block to the coding Workspace.   
@@ -65,7 +74,7 @@ player.onChat(" plant_flowers", function () {
 ## Step 6
 Add another ``||Math:pick random [0] to [10]||`` to replace the number oval of the ``||Agent:agent move [forward]||``. Change the second number of the ``||Math:pick random [0] to [10]||`` to **20**. 
 
-When this line of code is activated, your Agent will move forward to a random block between its current position and 20 blocks ahead. 
+When this line of code is added, your Agent will move forward to a random block between its current position and 20 blocks ahead. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -151,6 +160,6 @@ player.onChat(" plant_flowers", function () {
 ```
 
 ## Step 11
-Position your Agent and run the code. Position your Agent at one corner of your park, with the Agent facing the bulk of the park and with the main body of the park to the left. We have marked this in the image below with Yellow Wool. 
+Position your Agent and run the code. Position your Agent at one corner of your park, with the back of the Agent against a fence and with the main body of the park to the left.
 
 Test your code. Your Agent should now move forward to a random location, plant two randomly selected flowers, move backward, do the same and move left to start again. This will create a random meadow of flowers. 

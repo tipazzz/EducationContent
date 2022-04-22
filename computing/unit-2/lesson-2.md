@@ -130,7 +130,7 @@ Return to your ``||Loops:LOOPS||`` drawer and bring another ``||Loops:repeat [4]
 Return to the ``||Agent:AGENT||`` toolbox drawer and add another ``||Agent:agent [place on move]||``, and set it to **true**. Test your code. 
 
 ## Step 12
-Return to the ``||Agent:AGENT||`` toolbox drawer and add another ``||Agent:agent set active slot||``, and set it to **2**. This means that your Agent will now start to use the materials set in the second slot of its inventory. In our example, this will be **Stone Slabs**. 
+Return to the ``||Agent:AGENT||`` toolbox drawer and add another ``||Agent:agent set active slot||``, and set it to **2**. Use another loop to make the agent move forward 5 blocks and then move left. Then move the agent back 5 blocks and move left again. This should be repeated 3 times to make the roof using **Stone Slabs**.
 
 ### ~ tutorialhint
 
