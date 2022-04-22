@@ -33,7 +33,7 @@ Tell the BUILDER the direction. Now, we need to tell it what direction to build 
 
 You will find a compass in your inventory.
 
-As you move around, the **compass** does too. You can use this to find your North (the red dial is pointing North), East, South and West. The direction on the **compass** in the image below is West. This is the direction we want the ``||Builder:BUILDER||`` to work. 
+As you move around, the **compass** does too. You can use this to find your North (the red dial is pointing North), East, South and West. The direction on the **compass** is West. This is the direction we want the ``||Builder:BUILDER||`` to work. 
 
 ## Step 4
 Return to the ``||Builder:BUILDER||`` drawer and look for the ``||Builder:builder face [West (negative X)||`` code block. Add this to your main code and use the drop-down menu to set the correct direction for your build. 
