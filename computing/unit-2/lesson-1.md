@@ -65,14 +65,14 @@ player.onChat("road_1", function () {
 ```
 
 ## Step 5
-We are almost ready to test our code, however there is one more important thing we have to do to make this code work properly. Change the center, or **Z** coordinate, to one number lower. In this example, this will be **68**. Now test your code. If you have coded correctly, you should see a road appear in place of the Grass.
+We are almost ready to test our code, however there is one more important thing we have to do to make this code work properly. Change the center, or **Y** coordinate, to one number lower. In this example, this will be **68**. Now test your code. If you have coded correctly, you should see a road appear in place of the Grass.
 
 ### ~ tutorialhint
 ``` blocks
 player.onChat("road_1", function () {
     blocks.fill(
     GRAY_CONCRETE,
-    world(-22, 68, -565),
+    world(-21, 68, -565),
     world(61, 68, -569),
     FillOperation.Replace
     )
@@ -88,9 +88,12 @@ Repeat the steps for the second road.
 player.onChat("road_2", function () {
     blocks.fill(
     GRAY_CONCRETE,
-    world(-22, 68, -565),
-    world(61, 68, -569),
+    world(-21, 68, -532),
+    world(61, 68, -536),
     FillOperation.Replace
     )
 })
 ```
+
+## Step 7
+(Extension) With two roads done, build more using the code you have just created. When you are finished, go to the Unit 2 Lesson 1 NPC and ask for some carpet to make road markings with using your agent to place them.

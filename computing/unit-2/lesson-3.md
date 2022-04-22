@@ -2,10 +2,15 @@
 
 # Lesson 3: Code a Row of Houses
 
+## Build Area @unplugged
+We'll be building a house in this building zone in front of the Agency building. Here is an example building. It can be anything!
+
+![Build area image](https://raw.githubusercontent.com/Mojang/EducationContent/master/computing/unit-2/build_area.png)
+
 ## Step 1
-Manually build the house to your design specification. Do this in the designated construction zone, marked by yellow and black wool.
-![](build_area.png)
-![](example_house.png)
+Manually build a house to your design specification. Do this in the designated construction zone, marked by yellow and black wool.
+
+Press the back arrow to the left to view the example and location of the build area again.
 
 ## Step 2
 Rename the **run** element of the ``||Player:on chat command||`` block to **clone_here**. Drag a ``||Blocks:clone from||`` code block to your ``||Player:on chat command||``. 
@@ -53,7 +58,7 @@ player.onChat("clone_here.", function () {
 ```
 
 ## Step 5
-Change the first set of coordinates (from **Step 9**) to the ``||Blocks:clone from||`` set in the code block, and the second set of coordinates (from **Step 10**) to the ``||Blocks:to||`` set below them. Remember, the image below has example coordinates. 
+Change the first set of coordinates to the ``||Blocks:clone from||`` set in the code block, and the second set of coordinates to the ``||Blocks:to||`` set below them. Remember, the image below has example coordinates. 
 
 The last coordinates are relative to your player, so your player will become the marker for the place you want to clone the house. You'll need to move your player each time you want to clone another house. 
 
