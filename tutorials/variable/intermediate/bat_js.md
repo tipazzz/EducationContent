@@ -1,18 +1,18 @@
-# Bat Cave: Blocks
+# Bat Cave: JavaScript
 
 ## Step 1
-Rename the existing ``||player:on chat||`` command **cave**.
+Add an ``||player:on chat||`` command and name it **cave**.
 
-```blocks
+```javascript
 player.onChat("cave", function () {
 })
 ```
 
 ## Step 2
 
-Get a  ``||player:player say||`` command, type **"Dig a cave"**, and drag it into the ``||player:on chat||`` command.
+Code the player to  ``||player:say||``by typing **"Dig a cave"**, and drag it into the ``||player:on chat||`` command.
 
-```blocks
+```javascript
 player.onChat("cave", function () {
     player.say("Dig a cave")
 })
@@ -20,9 +20,9 @@ player.onChat("cave", function () {
 
 ## Step 3
 
-Get a ``||gameplay:time set||`` block, set it **day**, and drag it into the ``||player:on chat||`` **cave** command - below the ``||player:say||`` command.
+Set the time of day to **day**.
 
-```blocks
+```javascript
 player.onChat("cave", function () {
     player.say("Dig a cave")
     gameplay.timeSet(gameplay.time(DAY))
@@ -31,9 +31,9 @@ player.onChat("cave", function () {
 
 ## Step 4
 
-Get a ``||blocks:fill with||`` block and select an **air** block with these positions: **from -1.0,-1** and **to 1,2,1**. Set it to **replace**.
+Code the player to ``||blocks:fill with||`` an **air** block with these positions: **from  = -1.0,-1** and **to = 1,2,1**. Code it to **replace**.
 
-```blocks
+```javascript
 player.onChat("cave", function () {
     player.say("Dig a cave")
     gameplay.timeSet(gameplay.time(DAY))
@@ -48,9 +48,9 @@ player.onChat("cave", function () {
 
 ## Step 5
 
-Get a ``||loops:repeat||`` loop and set it to **50** times. Drag the ``||blocks:fill with||`` **air** block into the loop, then drag the entire ``||loops:repeat||`` loop into the ``||player:on chat||`` **cave** command below the ``||gameplay:time set||`` **day** command.
+Repeat the fill step **50** times.
 
-```blocks
+```javascript
 player.onChat("cave", function () {
     player.say("Dig a cave")
     gameplay.timeSet(gameplay.time(DAY))
@@ -67,10 +67,9 @@ player.onChat("cave", function () {
 
 ## Step 6
 
-Get a ``||variables:set variable||`` and assign it a new variable called **bat_cave**.  Get a ``||player:player world position||`` and drag it into the **bat_cave** variable. 
-Drag the newly completed ``||variables:set variable||`` **bat_cave** into the ``||player:on chat||`` command **cave** below the ``||loops:repeat||`` loop **50**.
+Set a ``||variables:new variable||`` and name it **bat_cave**, then set that variable to the  ``||player:player world position||``.
 
-```blocks
+```javascript
 let batcave: Position = null
 player.onChat("cave", function () {
     player.say("Dig a cave")
@@ -89,17 +88,17 @@ player.onChat("cave", function () {
 
 ## Step 7
 
-Get a  ``||player:say||`` block and code it as "You have 10 seconds to go out before the bats arrive." Drag it into the ``||player:on chat||`` **cave** command below the **bat_cave** variable.
+Code the player to ``||player:say||`` “You have 10 seconds to go out before the bats arrive.”
 
-```blocks
+```javascript
 player.say("You have 10 seconds to get out before the bats arrive.")
 ```
 
 ## Step 8
 
-Get a ``||loops: pause||`` loop and set it to **10** seconds (10,000 ms). Drag this loop into the end of the ``||player:on chat||`` command.
+``||loops: Pause||`` the code for **10** seconds (10,000 ms).
 
-```blocks
+```javascript
 player.say("You have 10 seconds to get out before the bats arrive.")
     loops.pause(10000)
 player.on_chat("cave", on_chat)
@@ -107,9 +106,9 @@ player.on_chat("cave", on_chat)
 
 ## Step 9
 
-Get another ``||player:player say||``command and code the player to say, "Watch out for bats!". Drag the newly completed ``||player:player say||`` into the ``||player:on chat||`` command at the end. 
+After the pause, code the player to say “Watch out for bats!”.
 
-```blocks
+```spy
 loops.pause(10000)
     player.say("Watch out for bats!")
 player.on_chat("cave", on_chat)
@@ -117,25 +116,25 @@ player.on_chat("cave", on_chat)
 
 ## Step 10
 
-Duplicate the ``||gameplay:time set||`` **day** (from step 3) and set it to **dusk**. Drag it into the end of the ``||player:on chat||`` command.
+Set the time to **dusk**.
 
-```blocks
+```javascript
 gameplay.timeSet(gameplay.time(DUSK))
 ```
 
 ## Step 11
 
-Get a ``||mobs:spawn animal||`` block and drag it into the workspace, select **bat** and assign the **bat_cave** variable.
+``||mobs:Spawn||`` a bat at the **bat_cave** variable.
 
-```blocks
+```javascript
 mobs.spawn(BAT, batcave)
 ```
 
 ## Step 12
 
-Next, repeat the **bat** ``||mobs:spawn animal||`` step. Get a ``||loops:repeat||`` loop and set it to **200** times. Drag the **bat** into the loop. Drag the entire loop into the ``||player:on chat||`` **cave** command below the ``||gameplay:time set||`` **dusk** block.
+Repeat the **bat** ``||mobs:spawn animal||`` **200** times.
 
-```blocks
+```javascript
 for (let index = 0; index < 200; index++) {
         mobs.spawn(BAT, batcave)
     }
@@ -145,7 +144,8 @@ for (let index = 0; index < 200; index++) {
 
 Go into Minecraft and type **cave** in the chat to see all the code run.
 
-```blocks
+
+```javascript
 let batcave: Position = null
 player.onChat("cave", function () {
     player.say("Dig a cave")
