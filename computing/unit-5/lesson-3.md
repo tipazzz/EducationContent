@@ -1,3 +1,4 @@
+### @explicitHints 1
 # Lesson 3: Code a Lighting System  
 
 ## Step 1
@@ -5,7 +6,7 @@ Code a wind indicator. The first thing we need to do is to create the illusion t
 
 Use the starter code and change the value for the ``||loops:repeat||`` element from **4** to **10**. 
 
-``` template
+```template
 player.onChat("wind_turbine", function () {
     for (let index = 0; index < 4; index++) {
         blocks.clone(
