@@ -3,9 +3,9 @@
 # Lesson 2: Animate the Wind Farm 
 
 ## Step 1
-Code three model blades. In Minecraft, ensure your player is at your wind farm, which should be near the following coordinates: **19, 79, -413**. If needed, use the slash command to teleport your player to the position by typing **/tp 19 79 -413** and selecting **Enter**.   
+Code three model blades.   
 
-Find a space away from your wind farm to create secret models that will be used for the animations. For this activity you can do this high up in the sky or dig a chamber underground, or just make sure they're far enough away so they won't be seen.
+Find a space away from your wind farm to create secret models that will be used for the animations. These can be anywhere in the world, just ideally make sure you can't see them from up on the hill.
 
 Create your first model of the turbine blades in one specific position of rotation. In our example below, we've made the blades in **Yellow Wool**, but you can make these from anything you wish. You must create these in the direction you want them to appear in final animation, so build them facing the way you want to see them when they finally appear at the end of this lesson. 
 

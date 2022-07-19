@@ -7,7 +7,7 @@ Wind turbines make up a wind farm. A ***wind turbine*** is like a windmill, wher
 ```template
 player.onChat("run", function(){
 })
-player.teleport(pos(19, 79, -413))
+player.teleport(world(19, 79, -413))
 ```
 
 ## Step 2
@@ -39,5 +39,14 @@ player.onChat("run", function () {
     while (true) {
     	
     }
+    builder.teleportTo(world(-40, 69, -575))
+    builder.face(WEST)
+    builder.move(FORWARD, 21)
+    builder.turn(RIGHT_TURN)
+    builder.move(FORWARD, 9)
+    builder.tracePath(OAK_FENCE)
+    builder.place(GRASS)
+    builder.mark()
+    builder.fill(GRASS)
 })
 ```
