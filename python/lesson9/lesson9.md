@@ -56,7 +56,7 @@ In the code you have been given a variable named `||variables:score||`, add **1*
 Edit the condition in the while loop, so that it only loops when `||variables:score||` is less than or equal to **15**. 
 Add two splash screens at the start and the end of the game using the `||gameplay:show title||` command. Declare the `||variable:score||` variable
 as global, using the command:
-```python
+```
 global score 
 ```
 
