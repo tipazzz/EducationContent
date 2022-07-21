@@ -15,7 +15,8 @@ To change a value in a list use: List_Name[positional value] = "New Cat Name" .
 
 ## Step 2
 Sort the list of cat names alphabetically using the **sort** method. 
-Then change the value inside the `||player:say||` command so that it displays the **fourth** name in the list. 
+Then change the value inside the `||player:say||` command so that it displays the **fourth** name in the list.   
+Don't forget, lists count from 0, so the 4th item won't be `Cat_Names[4]`.    
 Then press the **select a cat** button and choose the cat shown in the chat.   
 ### ~ tutorialhint 
 Remember that list positions start from zero. 
