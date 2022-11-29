@@ -8,7 +8,7 @@
 To code a conversation with your Agent select an ``||player:on chat||`` command and rename it from **run** to **hello**. Select a ``||player: say||`` command and drag it inside the ``||player:on chat||`` command.
 
 ## Step 2
-Type **Hi, I am your Agent!** inside the ``||player: say||`` command. When done, press the **Play** buton to compile the code, then go to Minecraft, press **T** and type **hello**.
+Type **Hi, I am your Agent!** inside the ``||player: say||`` command. When done, press the **Play** button to compile the code, then go to Minecraft, press **T** and type **hello**.
 
 ## Step 3
 Go back to your code and modify the conversation with the Agent. 
