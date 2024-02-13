@@ -1,5 +1,5 @@
 {
-    "name": "educationcontent",
+    "name": "education_content",
     "version": "8.0.3",
     "dependencies": {
         "core": "*",
