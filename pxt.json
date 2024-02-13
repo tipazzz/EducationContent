@@ -269,11 +269,11 @@
         "computing/unit-3/lesson-1.md"
     ],
     "targetVersions": {
-        "target": "1.7.28",
+        "target": "1.7.29",
         "targetId": "minecraft"
     },
     "supportedTargets": [
         "minecraft"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "tipazzz"
 }
