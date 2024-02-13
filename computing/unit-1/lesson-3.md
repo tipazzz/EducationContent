@@ -5,7 +5,7 @@
 # Lesson 3
 
 ## Step 1
-With everything you have learnt so far, can you code your agent to build a bridge across the water?   
+With ssss everything you have learnt so far, can you code your agent to build a bridge across the water?   
 The gap is 3 blocks wide.   
 When done, press the **Play** button to compile the code, then go to the Minecraft world, press **T** and type **build_a_bridge**.
 
