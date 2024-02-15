@@ -34,8 +34,7 @@ player.onChat("road_1", function () {
 ```
 
 ## Step 3
-Now open ``||Positions:POSITIONS||`` toolbox drawer and drag the world ``||Positions:[0] [0] [0]||`` code block onto your coding Workspace.
-Drag the world ``||Positions:[0] [0] [0]||`` block and replace the ``||Positions:relative||`` positions block inside the ``||Blocks:fill||`` block.
+Откройте блок ``||Positions:POSITIONS||`` и возмите блок ``||Positions:[0] [0] [0]||``. Затем замените им первую строку блока ``||Blocks:fill||``.
 
 ### ~ tutorialhint
 ``` blocks
@@ -50,7 +49,7 @@ player.onChat("road_1", function () {
 ```
 
 ## Step 4
-Drag another ``||Positions:world [0] [0] [0]||`` positions code block from the ``||Positions:POSITIONS||`` drawer and replace the second ``||Positions:relative||`` positions block inside the ``||Blocks:fill with||`` block.
+Возьмите еще один блок ``||Positions:world [0] [0] [0]||`` и замените им вторую строку блока ``||Blocks:fill with||``.
 
 ### ~ tutorialhint
 ``` blocks
@@ -65,7 +64,7 @@ player.onChat("road_1", function () {
 ```
 
 ## Step 5
-We are almost ready to test our code, however there is one more important thing we have to do to make this code work properly. Change the center, or **Y** coordinate, to one number lower. In this example, this will be **68**. Now test your code. If you have coded correctly, you should see a road appear in place of the Grass.
+Мы почти готовы протестировать наш код, однако есть еще одна важная вещь, которую мы должны сделать, чтобы этот код работал должным образом. Замените центральную, или **Y** координату, на число ниже. В этом примере это будет **68**. Теперь протестируйте свой код. Если вы закодировали правильно, вы должны увидеть, что вместо травы появилась дорога.
 
 ### ~ tutorialhint
 ``` blocks
@@ -81,7 +80,7 @@ player.onChat("road_1", function () {
 ```
 
 ## Step 6
-Repeat the steps for the second road.
+Повторите шаги для второй дороги.
 
 ### ~ tutorialhint
 ``` blocks
@@ -96,4 +95,4 @@ player.onChat("road_2", function () {
 ```
 
 ## Step 7
-(Extension) With two roads done, build more using the code you have just created. When you are finished, go to the Unit 2 Lesson 1 NPC and ask for some carpet to make road markings with using your agent to place them.
+Дополнительно. Сделав две дороги, постройте еще, используя только что созданный код. Когда вы закончите, подойдите к NPC из раздела 2 Урок 1 и попросите немного ковра, чтобы нанести дорожную разметку с помощью вашего агента для ее размещения.
