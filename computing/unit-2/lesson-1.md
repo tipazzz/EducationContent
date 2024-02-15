@@ -3,7 +3,7 @@
 # Lesson 1: Code a Road Network
 
 ## Step 1
-Rename the **run** element of the ``||Player:on chat command||`` block to **road_1**. Select the ``||Blocks:fill with||`` code block and drag it into your ``||Player:on chat command||`` block.
+Переименуйте текст **run** в блоке ``||Player:on chat command||`` на  **дорога**. Выберите блок ``||Blocks:fill with||`` и вставьте его внутрь вашего блока ``||Player:on chat command||``.
 
 ### ~ tutorialhint
 ``` blocks
@@ -19,7 +19,7 @@ player.onChat("road_1", function () {
 ```
 
 ## Step 2
-Use the drop-down menu to change the type of block from **Grass** to **Gray Concrete**.
+Используйте всплывающее меню, чтобы заменить **Траву** to **Серый бетон**.
 ### ~ tutorialhint
 
 ``` blocks
